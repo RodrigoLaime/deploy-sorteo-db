@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 
-const port = 3000;
+const port = 1234;
 //archivos estaticos busca  el archivo  htlm
 app.use(express.static(path.join(__dirname, './public')));
 
@@ -43,8 +43,6 @@ mongoose.connect(url, { useNewUrlParser: true })
       console.log('corriendo en el puerto ' + port);
     })
   })
-
-
 
 
 

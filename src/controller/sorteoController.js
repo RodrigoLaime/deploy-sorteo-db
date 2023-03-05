@@ -37,17 +37,17 @@ var sorteoController = {
   },
 
   //metodo para obtener winner
-  getSorteo: (req, res)=>{
+  getSorteo: (req, res) => {
     let query = schema.find({});//devuelve todo en la consulta
     query.sort('-date').exec((err, data) => {
-      if(err){
+      if (err) {
         return res.status(500).send({
           status: 'Error',
           message: 'Error al extraer los datos'
         });
       }
       //si no existen datos
-      if(!data){
+      if (!data) {
         return res.status(404).send({
           status: 'Error',
           message: 'No hay datos para mostrar'
@@ -61,7 +61,6 @@ var sorteoController = {
     });
   },
 
-  
 }
 
 module.exports = sorteoController
