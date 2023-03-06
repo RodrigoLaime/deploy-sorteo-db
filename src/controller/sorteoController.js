@@ -2,7 +2,7 @@ const schema = require('../models/schema');
 const Schema = require('../models/schema');
 
 //creamos un objeto controller para disponer de todos los métodos de ruta:
-var sorteoController = {
+const sorteoController = { //
 
   //Método para guardar un artículo:
   save: (req, res) => {

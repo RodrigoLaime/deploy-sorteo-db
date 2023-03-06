@@ -7,8 +7,8 @@ var router = express.Router();
 
 router.post('/sorteo', sorteoController.save);
 router.get('/winner', sorteoController.getSorteo);
-/*
-router.delete('./delete/id', sorteoController.deleteSorteo);
-router.put('./update/id', sorteoController.updateSorteo); */
+
+// router.delete('./delete/id', sorteoController.deleteSorteo);
+// router.put('./update/id', sorteoController.updateSorteo);
 
 module.exports = router;

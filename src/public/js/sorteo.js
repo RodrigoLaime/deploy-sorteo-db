@@ -87,7 +87,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
   });
 
 
-  /* boton mostrar ganador */
+  // boton mostrar ganador
   $ganador.addEventListener('click', () => {
     if (jugadoresArray.length === 0) {
       alert('No has ingresado participantes');
@@ -97,7 +97,6 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
   });
 };
 
-/* funcion contador */
 
 //funcion para agregar a la base de datos
 

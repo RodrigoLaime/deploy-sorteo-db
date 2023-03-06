@@ -1,4 +1,4 @@
-const winnerBtn = document.getElementById('winnerBtn');
+/* const winnerBtn = document.getElementById('winnerBtn');
 const home = document.getElementById('home');
 
 const sorteoDosContainer = document.getElementById('sorteoDosContainer')
@@ -14,4 +14,4 @@ home.addEventListener('click', () => {
   sorteoDosContainer.classList.remove('active');
   lista.classList.remove('active');
   winnerList.classList.add('active');
-})
+}) */
