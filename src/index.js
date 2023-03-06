@@ -11,9 +11,10 @@ app.use(express.static(path.join(__dirname, './public')));
 //envairoment
 const { config } = require('../config')
 const api = config.apiKey;
-const port = config.port
+const port = config.port;
+const name = config.name;
 
-const url = `mongodb+srv://hp-envy:${api}@cluster0.kpp1aja.mongodb.net/sorteo`;
+const url = `mongodb+srv://${name}:${api}@cluster0.kpp1aja.mongodb.net/sorteo`;
 
 // configuracion para evitar fallo de coneccion
 mongoose.Promise = global.Promise;
