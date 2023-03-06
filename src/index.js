@@ -14,7 +14,7 @@ const api = config.apiKey;
 
 const url = `mongodb+srv://hp-envy:${api}@cluster0.kpp1aja.mongodb.net/sorteo`;
 
-/* const url = 'mongodb+srv://hp-envy:q1kMHqGtFxS57YUI@cluster0.kpp1aja.mongodb.net/sorteo' */
+
 // configuracion para evitar fallo de coneccion
 mongoose.Promise = global.Promise;
 

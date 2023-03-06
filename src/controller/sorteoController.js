@@ -1,11 +1,9 @@
 const schema = require('../models/schema');
-var Schema = require('../models/schema');
 
 //creamos un objeto controller para disponer de todos los métodos de ruta:
 var sorteoController = {
 
   //Método para guardar un artículo:
-
   save: (req, res) => {
 
     var params = req.body;
@@ -38,7 +36,8 @@ var sorteoController = {
 
   //metodo para obtener winner
   getSorteo: (req, res) => {
-    let query = schema.find({});//devuelve todo en la consulta
+    let query = schema.find({});
+    //devuelve todo en la consulta
     query.sort('-date').exec((err, data) => {
       if (err) {
         return res.status(500).send({

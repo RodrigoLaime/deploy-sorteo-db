@@ -1,4 +1,5 @@
-##
+## mongodb
+ /* const url = 'mongodb+srv://hp-envy:q1kMHqGtFxS57YUI@cluster0.kpp1aja.mongodb.net/sorteo' */
 
 ##
  "scripts": {
@@ -12,3 +13,4 @@
     "parcel-bundler": "^1.12.5",
     "postcss": "^8.4.21"
   }
+
