@@ -101,7 +101,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 
 //funcion para agregar a la base de datos
 
-/* const api = 'http://localhost:1234/api/sorteo' */
+/* const api = 'http://localhost:3000/api/sorteo' */
 const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo'
 async function postData(name) {
   const response = await fetch(api, {

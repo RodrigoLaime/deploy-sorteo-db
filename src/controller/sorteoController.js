@@ -1,4 +1,5 @@
 const schema = require('../models/schema');
+const Schema = require('../models/schema');
 
 //creamos un objeto controller para disponer de todos los métodos de ruta:
 var sorteoController = {
