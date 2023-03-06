@@ -15,8 +15,7 @@ const name = config.name;
 //archivos estaticos busca  el archivo  htlm
 app.use(express.static(path.join(__dirname, './public')));
 
-/* const url = `mongodb+srv://${name}:${api}@cluster0.kpp1aja.mongodb.net/sorteo`; */
-const url = `mongo "mongodb+srv://${name}:${api}@containers-us-west-29.railway.app:6900"`
+const url = `mongodb+srv://${name}:${api}@cluster0.kpp1aja.mongodb.net/sorteo`;
 
 // configuracion para evitar fallo de coneccion
 mongoose.Promise = global.Promise;
@@ -46,4 +45,3 @@ mongoose.connect(url, { useNewUrlParser: true })
       console.log('corriendo en el puerto ' + port);
     })
   })
-
