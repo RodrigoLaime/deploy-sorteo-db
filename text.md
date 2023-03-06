@@ -1,5 +1,6 @@
 ## mongodb
  /* const url = 'mongodb+srv://hp-envy:q1kMHqGtFxS57YUI@cluster0.kpp1aja.mongodb.net/sorteo' */
+ /* q1kMHqGtFxS57YUI */
 
 ##
  "scripts": {
