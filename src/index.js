@@ -5,14 +5,15 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 
-//archivos estaticos busca  el archivo  htlm
-app.use(express.static(path.join(__dirname, './public')));
-
 //envairoment
 const { config } = require('../config')
 const api = config.apiKey;
 const port = config.port;
 const name = config.name;
+
+
+//archivos estaticos busca  el archivo  htlm
+app.use(express.static(path.join(__dirname, './public')));
 
 const url = `mongodb+srv://${name}:${api}@cluster0.kpp1aja.mongodb.net/sorteo`;
 
