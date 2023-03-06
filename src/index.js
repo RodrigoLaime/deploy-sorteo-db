@@ -4,13 +4,14 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 
-const port = 1234;
+
 //archivos estaticos busca  el archivo  htlm
 app.use(express.static(path.join(__dirname, './public')));
 
 //envairoment
 const { config } = require('../config')
 const api = config.apiKey;
+const port = config.port
 
 const url = `mongodb+srv://hp-envy:${api}@cluster0.kpp1aja.mongodb.net/sorteo`;
 
