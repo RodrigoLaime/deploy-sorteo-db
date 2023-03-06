@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var mongoSchema = new Schema({
-    name: String,
+  name: String,
 });
 
-module.exports = mongoose.model('winner', mongoSchema);
+module.exports = mongoose.model('winners', mongoSchema);
