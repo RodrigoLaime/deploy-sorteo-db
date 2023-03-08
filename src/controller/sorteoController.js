@@ -14,6 +14,7 @@ const sorteoController = { //
 
     // Asignar valores
     schema.name = params.name;
+    schema.amount = params.amount;
 
     // Guardamos el articulo
     schema.save((err, userWinner) => {
@@ -56,7 +57,7 @@ const sorteoController = { //
       //si existen datos
       return res.status(200).send({
         status: 'Succes',
-        data,
+        data
       });
     });
   },

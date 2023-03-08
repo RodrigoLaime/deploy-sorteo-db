@@ -32,8 +32,11 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 
     const random = Math.floor(Math.random() * jugadoresArray.length)
     const jugadorGanador = jugadoresArray[random];
-
     jugadoresArray = [];
+
+
+    // agregar numero de veces
+    let amount = 1;
 
     setTimeout(() => {
       $jugadores.innerHTML = "";
@@ -45,7 +48,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
     const winner = d.getElementById('winner');
     function modalFunction() {
       if (UserGandor) {
-        postData(UserGandor);
+        postData(UserGandor, amount);
         winner.innerHTML = `El ganador fue: ${jugadorGanador} `
         modal.classList.remove('active');
         setTimeout(() => {
@@ -102,7 +105,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 
 /* const api = 'http://localhost:3000/api/sorteo' */
 const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo'
-async function postData(name) {
+async function postData(name, repeat) {
   const response = await fetch(api, {
     method: 'POST',
     headers: {
@@ -111,6 +114,7 @@ async function postData(name) {
     },
     body: JSON.stringify({
       'name': name,
+      'amount': repeat
     })
   });
   const data = await response.json();
