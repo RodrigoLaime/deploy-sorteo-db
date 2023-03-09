@@ -20,3 +20,12 @@ let arreglo = [
 ];
 arreglo = agregarNumeroSiSeRepite(arreglo, 'Juan');
 console.log(arreglo);
+
+
+
+const s = []
+function suma(d) {
+  d++;
+  console.log(d)
+}
+suma(s)

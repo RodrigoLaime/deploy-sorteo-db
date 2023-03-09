@@ -6,7 +6,7 @@ const Schema = mongoose.Schema; //
 
 const mongoSchema = new Schema({ //
   name: { type: String, require: true },
-  amount: { type: Number }
+  amount: { type: Array }
 });
 
 module.exports = mongoose.model('winners', mongoSchema);
