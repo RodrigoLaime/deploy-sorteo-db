@@ -18,3 +18,25 @@ db.usuarios.distinct('correoElectronico', { correoElectronico: { $ne: null } }, 
 En esta consulta, la función distinct() busca en la colección usuarios los valores únicos del campo correoElectronico donde el valor no sea null. Si se encuentran valores repetidos, se imprimirán en la consola. Si no se encuentran valores repetidos, se imprimirá un mensaje indicando que no se encontraron correos electrónicos repetidos.
 
 Ten en cuenta que la función distinct() puede ser un poco lenta en colecciones grandes, ya que debe buscar todos los valores únicos del campo especificado. Si tienes una colección muy grande, puede ser más eficiente utilizar la agregación de MongoDB para contar los valores repetidos en lugar de buscar los valores únicos.
+
+ 
+
+ ## crear una api con metodo get, post, patch
+ ## "model" es el schema o la estructura como se guarda en la DB
+ ## "controller" esta la logica para los metodos get, post, patch, delete con las validadciones de status para la api
+ ## "routes" segun el metodo get, post, etc. se generan rutas para cada metodo
+ ##
+ ##
+ ##
+ ##
+ ##
+ ##
+ ##
+ ##
+ ##
+ ##
+ ##
+ ##
+ ##
+ ##
+ ## 

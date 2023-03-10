@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 
-
 //envairoment
 const { config } = require('../config')
 const api = config.apiKey;

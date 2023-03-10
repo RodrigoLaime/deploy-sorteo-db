@@ -44,7 +44,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
       $jugadores.innerHTML = "";
     }, 4000);
 
-    /* const UserGandor = jugadorGanador;
+    const UserGandor = jugadorGanador;
     //modal 
     const modal = d.getElementById('modal');
     const winner = d.getElementById('winner');
@@ -58,13 +58,13 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
           modal.classList.add('active');
         }, 4000);
       }
-    } */
+    }
 
     /* modal indica que ya existia */
 
 
     //Contador
-    /*  const contador = d.getElementById('contador')
+     const contador = d.getElementById('contador')
      const num = d.getElementById('numero');
      let numero = 3;
      const timer = setInterval(() => {
@@ -78,11 +78,11 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
          clearInterval(timer);
          modalFunction(UserGandor);
        }
-     }, 1000); */
+     }, 1000);
 
     //
 
-    let id = urlParams.get('id');
+    /* let id = urlParams.get('id');
     let nameParams = urlParams.get('name');
     let amountParams = urlParams.get('amount');
     function cargarAmount(userWinner) {
@@ -94,7 +94,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
         updateData(id, nameParams, amountParams)
       }
     }
-    cargarAmount(jugadorGanador);
+    cargarAmount(jugadorGanador); */
 
   };
 
@@ -123,7 +123,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 
 /* ########################################## */
 
-async function updateData(id, nombre, amount) {
+/* async function updateData(id, nombre, amount) {
   const response = await fetch('http://localhost:3000/api/update' + id, {
     method: 'PATCH',
     headers: {
@@ -138,13 +138,13 @@ async function updateData(id, nombre, amount) {
   const data = await response.json();
   console.log(data)
 }
-
+ */
 
 /* ########################################## */
 
 //funcion para agregar a la base de datos
-const api = 'http://localhost:3000/api/sorteo'
-/* const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo' */
+/* const api = 'http://localhost:3000/api/sorteo' */
+const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo'
 async function postData(name, repeat) {
   const response = await fetch(api, {
     method: 'POST',

@@ -23,7 +23,7 @@ console.log(arreglo);
 
 
 
-const s = []
+const s = [1]
 function suma(d) {
   d++;
   console.log(d)
