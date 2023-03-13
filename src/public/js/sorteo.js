@@ -64,21 +64,21 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 
 
     //Contador
-     const contador = d.getElementById('contador')
-     const num = d.getElementById('numero');
-     let numero = 3;
-     const timer = setInterval(() => {
-       if (!!UserGandor && !!numero) {
-         contador.classList.remove('active');
-         console.log(numero);
-         num.innerHTML = `0${numero}`;
-         numero--;
-       } else if (!!UserGandor && numero == 0) {
-         contador.classList.add('active');
-         clearInterval(timer);
-         modalFunction(UserGandor);
-       }
-     }, 1000);
+    const contador = d.getElementById('contador')
+    const num = d.getElementById('numero');
+    let numero = 3;
+    const timer = setInterval(() => {
+      if (!!UserGandor && !!numero) {
+        contador.classList.remove('active');
+        console.log(numero);
+        num.innerHTML = `0${numero}`;
+        numero--;
+      } else if (!!UserGandor && numero == 0) {
+        contador.classList.add('active');
+        clearInterval(timer);
+        modalFunction(UserGandor);
+      }
+    }, 1000);
 
     //
 
@@ -143,8 +143,8 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 /* ########################################## */
 
 //funcion para agregar a la base de datos
-/* const api = 'http://localhost:3000/api/sorteo' */
-const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo'
+const api = 'http://localhost:3000/api/sorteo'
+/* const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo' */
 async function postData(name, repeat) {
   const response = await fetch(api, {
     method: 'POST',
