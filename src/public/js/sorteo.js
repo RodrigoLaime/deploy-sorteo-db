@@ -126,9 +126,10 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 };
 
 /* ########################################## */
-
+/* const apiPatch = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/update/' */
+const apiPatch = 'http://localhost:3000/api/update/'
 async function updateData(id, nombre, amount) {
-  const response = await fetch('/api/update/' + id, {
+  const response = await fetch(apiPatch + id, {
     method: 'PATCH',
     headers: {
       'Accept': 'aplication/json',
