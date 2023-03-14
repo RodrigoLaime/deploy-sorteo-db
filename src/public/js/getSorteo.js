@@ -4,7 +4,6 @@ async function getSorteo() {
   const data = await response.json();
   console.log(data);
 
-
   data.data.forEach(user => {
     const usuario = `<li>name: ${user.name}</li>`;
 
@@ -15,6 +14,7 @@ async function getSorteo() {
       winnerUl.insertAdjacentHTML('beforeend', usuario)
     }
   });
+
 
 }
 
