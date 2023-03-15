@@ -4,22 +4,26 @@ async function getSorteo() {
   const data = await response.json();
   console.log(data);
   let num = 0;
+  /*  let dat = data.data; */
+  /* data.data.map((e) => {
+    console.log('amount', e.amount);
+    let so = e.amount.sort((a, b) => b - a);
+    console.log(so)
+
+  }) */
+  /*   dat.sort((a, b) => b - a);
+    console.log(dat.amount); */
   data.data.forEach(user => {
     num += 1
-    /*     const usuario = `<li>name: ${user.name}</li>`; */
     const winnerUl = document.getElementById('winnerUl');
     if (user.lengt === 0) {
       winnerUl.innerHTML = 'No hay ganadores para mostrar'
     } else {
-      /*    winnerUl.insertAdjacentHTML('beforeend', usuario) */
       mostrarWinner(user, num)
     }
   });
 
 }
-/*   const table = document.getElementById('table'); */
-/*   const head = document.getElementById('thead'); */
-/*   head.insertAdjacentHTML('afterend', body) */
 const mostrarWinner = (user, numero) => {
   const body = document.getElementById('tbody');
   //crear element
@@ -33,7 +37,6 @@ const mostrarWinner = (user, numero) => {
   td3.innerText = numero
   body.appendChild(tr1);
 }
-/* mostrarWinner(); */
 
 
 getSorteo()
