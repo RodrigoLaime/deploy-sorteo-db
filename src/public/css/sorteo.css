@@ -14,7 +14,11 @@
 
 html {
   font-size: 62.5%;
-  background-color: white;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23FFFFFF' stroke-width='0.3' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(33.55) translate(-970.19 -727.65)'%3E%3Cuse fill='%23fcfcfc' href='%23s' y='2'/%3E%3Cuse fill='%23fcfcfc' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='2'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(33.55) translate(-970.19 -727.65)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(33.55) translate(-970.19 -727.65)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(33.55) translate(-970.19 -727.65)'%3E%3Cg fill='%23f2f2f2'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(33.55) translate(-970.19 -727.65)'%3E%3Cg fill='%23FFFFFF'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23efefef'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(33.55) translate(-970.19 -727.65)'%3E%3Cg fill='%2305EB87'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(33.55) translate(-970.19 -727.65)'%3E%3Cg fill='%2305EB87'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(33.55) translate(-970.19 -727.65)'%3E%3Cg fill='%2305EB87'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .active {
@@ -27,7 +31,14 @@ header {
   left: 0;
   width: 100vw;
   z-index: 1;
-  border-bottom: 1px solid gray;
+  /* background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23FFFFFF' stroke-width='0.3' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(38.25) translate(-973.86 -730.39)'%3E%3Cuse fill='%23fcfcfc' href='%23s' y='2'/%3E%3Cuse fill='%23fcfcfc' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='2'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(38.25) translate(-973.86 -730.39)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(38.25) translate(-973.86 -730.39)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(38.25) translate(-973.86 -730.39)'%3E%3Cg fill='%23f2f2f2'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(38.25) translate(-973.86 -730.39)'%3E%3Cg fill='%23FFFFFF'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23efefef'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(38.25) translate(-973.86 -730.39)'%3E%3Cg fill='%2305EB87'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(38.25) translate(-973.86 -730.39)'%3E%3Cg fill='%2305EB87'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='rotate(144 1000 750) scale(38.25) translate(-973.86 -730.39)'%3E%3Cg fill='%2305EB87'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; */
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 header ul {
@@ -46,12 +57,22 @@ header ul h2 {
 }
 
 header ul .winnerBtn a {
-  background-color: #03AB62;
+  background-color: #05EB87;
   padding: 10px;
   font-size: 1.6rem;
   border-radius: 5px;
   color: white;
   text-decoration: none;
+  border: 2px solid #03ab6200;
+  transition: .5s ease;
+}
+
+header ul .winnerBtn a:hover {
+  border: 2px solid #03AB62;
+}
+
+header ul .winnerBtn a:active {
+  background-color: #03AB62;
 }
 
 /* Modal */
@@ -95,7 +116,6 @@ header ul .winnerBtn a {
 }
 
 .container-contador {
-  /*  background-color: #FF6600; */
   background-color: var(--verde4);
   width: 300px;
   margin: 0 auto;
@@ -126,30 +146,26 @@ body {
 main {
   width: 100%;
   padding: 0 20px;
-  background-color: salmon;
 }
 
 .sorteo-dos {
-  /*   max-width: 960px;
-  min-width: 270px; */
   margin: 0 auto;
 }
 
 .sorteo-dos-container {
-  background-color: sandybrown;
   width: 100%;
   max-width: 575px;
   min-width: 270px;
   position: relative;
   margin: 0 auto;
   padding-bottom: 25px;
-  border-bottom: 3px solid var(--verde4);
-  padding: 20px;
+  padding: 30px 20px;
+  backdrop-filter: blur(10px);
 }
 
 .sorteo-dos-container h2 {
   width: 100%;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   text-align: left;
   padding: 10px 0;
   border-bottom: 1px solid gray;
@@ -157,7 +173,6 @@ main {
 
 .sorteo-dos-container .sorteo-input-container {
   width: 100%;
-  background-color: #025E36;
 }
 
 .sorteo-dos-container .sorteo-input-container h4 {
@@ -165,22 +180,42 @@ main {
   font-size: 1.8rem;
   text-align: left;
   padding: 10px 0;
+  color: #05EB87;
+  font-weight: 600;
 }
 
 .sorteo-dos-container .sorteo-input-container .nombres {
-  background-color: aqua;
+  display: flex;
   text-align: left;
+  padding: 10px 0;
 }
 
 .sorteo-dos-container .sorteo-input-container .nombres .sorteo-dos {
   border-radius: 100px;
   background-color: white;
   border: none;
-  width: 50%;
-  min-width: 150px;
+  width: 100%;
+  max-width: 390px;
+  min-width: 80px;
   padding: 10px 15px;
   font-size: 1.6rem;
-  border: 2px solid #FF6600;
+  border: 2px solid #05EB87;
+  color: rgba(0, 0, 0, 0.4)
+}
+
+.sorteo-dos-container .sorteo-input-container .nombres .sorteo-dos::placeholder {
+  color: rgba(0, 0, 0, 0.4)
+}
+
+.sorteo-dos-container .sorteo-input-container .nombres .sorteo-dos:focus {
+  outline: none;
+}
+
+
+.container-button {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
 }
 
 .sorteo-dos-container .sorteo-input-container .nombres .agregar-jugador {
@@ -188,199 +223,80 @@ main {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid white;
   color: white;
-  background-color: #FF6600;
+  background-color: #05EB87;
+  transition: .3s ease;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.sorteo-dos-container .sorteo-input-container .nombres .agregar-jugador:active {
+  background-color: var(--verde3);
+  border: 1px solid #03AB62;
+}
+
+.sorteo-dos-container .sorteo-input-container .nombres .agregar-jugador:hover {
+  border: 2px solid #03AB62;
 }
 
 .sorteo-dos-container .sorteo-input-container .nombres .ganador-btn-dos {
-  background-color: #FF6600;
-  border: 2px solid white;
+  background-color: #05EB87;
+  border: 2px solid #03ab6200;
   padding: 0 8px;
   border-radius: 100px;
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
   padding: 10px 15px;
+  transition: .3s ease;
 }
 
-/* .sorteo-dos-container {
+.sorteo-dos-container .sorteo-input-container .nombres .ganador-btn-dos:hover {
+  border: 2px solid #03AB62;
+}
+
+.sorteo-dos-container .sorteo-input-container .nombres .ganador-btn-dos:active {
+  background-color: var(--verde3);
+}
+
+/* LISTA */
+.lista {
   width: 100%;
-  align-items: center;
-  text-align: center;
-} */
-
-/* .sorteo-dos-container h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  padding: 20px 0;
-  background-color: var(--verde4);
-  border-radius: 5px 5px 5px 0px;
-}
-
-.sorteo-dos-container h4 {
-  background-color: #00000038;
-  width: 170px;
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 0px 0px 5px 5px;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.sorteo-dos-container .nombres {
-  width: 300px;
-  min-width: 200px;
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
-.sorteo-dos-container .nombres .sorteo-dos {
-  border-radius: 100px;
-  background-color: white;
-  border: none;
-  width: 160px;
-  padding: 10px 15px;
-  font-size: 1.6rem;
-  border: 2px solid #FF6600;
-}
-
-.sorteo-dos-container .nombres .agregar-jugador {
-  font-size: 2rem;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid white;
-  color: white;
-  background-color: #FF6600;
-}
-
-.sorteo-dos-container .nombres .sorteo-dos:focus {
-  outline: none;
-}
-
-.sorteo-dos-container .nombres .botones {
-  display: flex;
-  gap: 10px;
-}
-
-
-.sorteo-dos-container .botones .ganador-btn-dos {
-  background-color: #FF6600;
-  border: 2px solid white;
-  padding: 0 8px;
-  border-radius: 100px;
-  color: white;
-  font-size: 1.6rem;
-  font-weight: bold;
-} */
-
-/* lista */
-/* .sorteo-dos .lista {
-  width: 100%;
-  max-width: 300px;
-  min-width: 150px;
+  max-width: 575px;
+  min-width: 270px;
   margin: 0 auto;
-  margin-top: 20px;
+  padding: 30px 20px;
   text-align: left;
+  backdrop-filter: blur(10px);
 }
 
-.sorteo-dos .lista h3 {
-  background-color: #330000;
-  border-radius: 5px 5px 0px 0px;
-  font-size: 2rem;
-  padding: 10px;
-  border-bottom: 2px solid;
+.lista h3 {
+  font-size: 2.6rem;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
 }
 
-.sorteo-dos .lista-jugadores {
-  list-style: none;
-  background-color: #00000038;
-  border-radius: 0 0 5px 5px;
-}
-
-.sorteo-dos .lista-jugadores li {
-  font-size: 1.6rem;
-  padding: 5px;
-  margin: 0 0 5px 0;
-  border-left: 2px solid white;
-}
- */
-/* lista winner */
-/* .winnerList {
-  margin: 0 auto;
+.lista ul {
   width: 100%;
-  max-width: 300px;
-  min-width: 150px;
-}
-
-.winnerList h3 {
-  font-size: 3rem;
-  background-color: #330000;
-  border-bottom: 2px solid white;
-  padding: 10px;
-  border-radius: 5px 5px 0 0;
-}
-
-.winnerList .winnerUl {
-  background-color: #00000038;
+  min-width: 240px;
   list-style: none;
-  text-align: left;
-  border-radius: 0 0 5px 5px;
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0;
+  grid-template-columns: 1fr 1fr;
 }
 
-.winnerList .winnerUl li {
+.lista ul li {
+  font-size: 1.4rem;
+  color: white;
+  background-color: #05EB87;
   padding: 5px;
-  margin: 0 5px;
-  font-size: 1.6rem;
-} */
+  border-radius: 3px;
+}
 
 
-/* 
-@media (min-width: 640px) {
-  .sorteo-dos {
-    display: flex;
-  }
-
-  .sorteo-dos .lista-jugadores {
-    padding: 10px;
-  }
-
-  .sorteo-dos .lista {
-    margin-left: 10px;
-    margin-top: 0;
-    padding: 0 5px;
-  }
-
-  .sorteo-dos-container {
-    width: 50%;
-  }
-
-
-  .lista {
-    width: 50%;
-  }
-} */
 @media(min-width: 475px) {
-  .sorteo-dos-container .sorteo-input-container {
-    display: flex;
-  }
-
-  .sorteo-dos-container .sorteo-input-container h4 {
-    width: 41%;
-    font-size: 1.8rem;
-    text-align: left;
-    padding: 10px 0;
-  }
-
-  .sorteo-dos-container .sorteo-input-container .nombres {
-    display: flex;
-    width: 59%;
-    background-color: aqua;
-    align-items: center;
+  .lista ul {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
