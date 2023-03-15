@@ -21,8 +21,8 @@
 <body id="body">
   <header>
     <ul>
-      <li class="home" id="home">home</li>
-      <li class="winnerBtn" id="winnerBtn">winner</li>
+      <h2>Raffle Game</h2>
+      <li class="winnerBtn" id="winnerBtn"><a href="./winner.html">winner</a></li>
     </ul>
 
 
@@ -47,17 +47,23 @@
       <!-- container sorteo -->
       <div class="sorteo-dos-container" id="sorteoDosContainer">
         <h2>Sorteo Digital</h2>
-        <h4>ingresar dato</h4>
-        <div class="nombres">
-          <input id="sorteo-dos" class="sorteo-dos" type="text" placeholder="Nombre" />
+        <div class="sorteo-input-container">
+          <h4>ingresar dato</h4>
+          <div class="nombres">
+            <input id="sorteo-dos" class="sorteo-dos" type="text" placeholder="Nombre" />
 
-          <div class="botones">
-            <button id="agregar-jugador" class="agregar-jugador" type="button"><i class="fa-solid fa-plus"></i></button>
-            <button id="ganador-btn-dos" class="ganador-btn-dos" type="button" value="Sortear Ganador">
-              Sorteo
-            </button>
+            <div class="container-button">
+              <button id="agregar-jugador" class="agregar-jugador" type="button">
+                <i class="fa-solid fa-check"></i>
+                <!-- <i class="fa-solid fa-plus"></i> -->
+              </button>
+              <button id="ganador-btn-dos" class="ganador-btn-dos" type="button" value="Sortear Ganador">
+                Sorteo
+              </button>
+            </div>
           </div>
         </div>
+
       </div>
 
       <!-- lista -->
@@ -66,34 +72,10 @@
         <ul id="lista-jugadores" class="lista-jugadores">
         </ul>
       </div>
-      <!-- winnerList -->
-      <div class="winnerList" id="winnerList">
-        <h3>Users Winner</h3>
-        <ul class="winnerUl" id="winnerUl"></ul>
-      </div>
 
     </section>
   </main>
   <script src="./js/sorteo.js" type="module"></script>
-  <script src="./js/getSorteo.js"></script>
-  <script src="./js/button.js"></script>
-  <!--  -->
- <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-  <script>
-    VANTA.BIRDS({
-      el: "#body",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color1: 0x48197,
-      color2: 0x2fe9ef
-    })
-  </script> -->
 </body>
 
 </html>

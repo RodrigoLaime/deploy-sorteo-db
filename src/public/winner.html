@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/winner.css">
+  <!-- fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <ul>
+      <h1>Raffle Game</h1>
+      <li class="home" id="home"><a href="./index.html">Home</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <div class="winnerList" id="winnerList">
+      <h3>Users Winner</h3>
+      <table id="table">
+        <thead id="thead">
+          <tr>
+            <th>Orden</th>
+            <th>Nombre ganador</th>
+            <th>Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody" id="tbody">
+          <!-- <tr>
+            <td>1</td>
+            <td>Elemento 1</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Elemento 2</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Elemento 3</td>
+            <td>2</td>
+          </tr> -->
+        </tbody>
+      </table>
+      <ul class="winnerUl" id="winnerUl"></ul>
+    </div>
+  </main>
+
+  <script src="./js/getSorteo.js"></script>
+</body>
+
+</html>
