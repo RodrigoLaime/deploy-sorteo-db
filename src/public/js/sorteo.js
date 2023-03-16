@@ -69,7 +69,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 
         if (Gandor) {
           if (result && dato.includes(result)) {
-            console.log('Ya existe el usuario');
+            alert('Ya existe el usuario')
             console.log(result._id)
 
             let amountDb = result.amount;

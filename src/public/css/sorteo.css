@@ -77,18 +77,24 @@ header ul .winnerBtn a:active {
 /* Modal */
 .modal {
   position: fixed;
-  top: 80px;
-  width: 95%;
+  top: -15px;
+  left: 5%;
+  width: 90%;
+  border-radius: 5px;
   z-index: 1;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .modal .container-modal {
-  
-  background-color: #03AB62;
-  width: 300px;
+  background-color: #283141;
+  width: 100%;
+  min-width: 270px;
   margin: 0 auto;
   border-radius: 5px;
-  padding: 5px;
+  padding: 20px;
   z-index: 1;
   color: white;
 }
@@ -96,7 +102,7 @@ header ul .winnerBtn a:active {
 .modal .container-modal h2 {
   font-size: 2rem;
   padding: 15px;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid gray;
 }
 
 .modal .container-modal p {
@@ -109,24 +115,34 @@ header ul .winnerBtn a:active {
 /* contador */
 .contador {
   position: fixed;
-  top: 80px;
-  width: 95%;
+  top: -15px;
+  width: 90%;
+  left: 5%;
   z-index: 1;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container-contador {
-    
-  background-color: var(--verde4);
-  width: 300px;
+
+  background-color: #283141;
+  width: 100%;
+  min-width: 270px;
   margin: 0 auto;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   z-index: 1;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
 }
 
 .container-contador h2 {
-  font-size: 4rem;
   padding: 25px 0;
 }
 
@@ -181,7 +197,7 @@ main {
 
 .sorteo-dos-container .sorteo-input-container h4 {
   width: 100%;
-  font-size: 1.8rem;  
+  font-size: 1.8rem;
   text-align: left;
   padding: 10px 0;
   color: #03AB62;
@@ -258,7 +274,7 @@ main {
 }
 
 .sorteo-dos-container .sorteo-input-container .nombres .ganador-btn-dos:active {
-  background-color:#05EB87;
+  background-color: #05EB87;
 }
 
 /* LISTA */
@@ -290,7 +306,7 @@ main {
 .lista ul li {
   font-size: 1.4rem;
   color: white;
-  background-color:#131c2bff;
+  background-color: #131c2bff;
   padding: 8px;
   border-radius: 3px;
 }
