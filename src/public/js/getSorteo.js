@@ -4,16 +4,14 @@ async function getSorteo() {
   const data = await response.json();
   console.log(data);
   let num = 0;
-  /*  let dat = data.data; */
-  /* data.data.map((e) => {
-    console.log('amount', e.amount);
-    let so = e.amount.sort((a, b) => b - a);
-    console.log(so)
-
-  }) */
-  /*   dat.sort((a, b) => b - a);
-    console.log(dat.amount); */
-  data.data.forEach(user => {
+  //ordena de mayor a menor
+  let orden = data.data.sort((a, b) => b.amount - a.amount);
+  console.log(orden);
+  //optine el top 10
+  let topTen = orden.slice(0, 10);
+  console.log(topTen);
+  /*   data.data.forEach(user => { */
+  topTen.forEach(user => {
     num += 1
     const winnerUl = document.getElementById('winnerUl');
     if (user.lengt === 0) {

@@ -29,3 +29,14 @@ function suma(d) {
   console.log(d)
 }
 suma(s)
+
+/*  */
+let array = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
+
+let sortedArray = array.sort(function (a, b) {
+  return b - a;
+});
+
+let topTen = sortedArray.slice(0, 10);
+
+console.log(topTen);
