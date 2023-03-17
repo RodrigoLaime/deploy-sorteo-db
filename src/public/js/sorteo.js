@@ -4,7 +4,7 @@ d.addEventListener("DOMContentLoaded", () => {
 });
 
 function sorteoDos(input, agregar, ganador, jugadores) { //agregamos 
-  const $input = document.getElementById(input), //$ indica que estas trabajando en una etiqueta HTML
+  let $input = document.getElementById(input), //$ indica que estas trabajando en una etiqueta HTML
     $agregar = d.getElementById(agregar),
     $ganador = d.getElementById(ganador),
     $jugadores = d.getElementById(jugadores);
@@ -12,14 +12,14 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 
   /* funcion agregar jugador */
   const agregarJugadores = () => {
-    const inputValue = $input.value;
+    let inputValue = $input.value;
 
     if (inputValue === '' || inputValue.length === 0) {
       $input.style = 'border: 2px solid red'
       setTimeout(() => {
         $input.style = 'border: 2px solid #05EB87'
       }, 3000);
-    /*   alert('No has ingresado participante'); */
+      /*   alert('No has ingresado participante'); */
     } else {
       jugadoresArray.forEach(e => {
         if (inputValue === e) {
@@ -27,10 +27,14 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
           inputValue = '';
         }
       })
+      if (inputValue === '' || inputValue.length === 0) {
+        alert('nooooo')
+      } else if (inputValue || inputValue.length > 0) {
+        jugadoresArray.push(inputValue);
+        $jugadores.insertAdjacentHTML("beforeend", ` <li>${inputValue}</li> `);
+        $input.value = '';
+      }
 
-      jugadoresArray.push(inputValue);
-      $jugadores.insertAdjacentHTML("beforeend", ` <li>${inputValue}</li> `);
-      $input.value = '';
     }
 
   };
@@ -135,7 +139,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
       setTimeout(() => {
         $input.style = 'border: 2px solid #05EB87'
       }, 3000);
-     /*  alert('No has ingresado participantes'); */
+      /*  alert('No has ingresado participantes'); */
     } else {
       ganadorSorteo();
     }
@@ -143,8 +147,8 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 };
 
 /* ########################################## */
-/* const apiPatch = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/update/' */
-const apiPatch = 'http://localhost:3000/api/update/'
+const apiPatch = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/update/'
+/* const apiPatch = 'http://localhost:3000/api/update/' */
 async function updateData(id, nombre, amount) {
   const response = await fetch(apiPatch + id, {
     method: 'PATCH',
@@ -164,8 +168,8 @@ async function updateData(id, nombre, amount) {
 /* ########################################## */
 
 //funcion para agregar a la base de datos
-const api = 'http://localhost:3000/api/sorteo'
-/* const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo' */
+/* const api = 'http://localhost:3000/api/sorteo' */
+const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo'
 async function postData(name, repeat) {
   const response = await fetch(api, {
     method: 'POST',
