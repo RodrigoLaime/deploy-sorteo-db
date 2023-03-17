@@ -15,7 +15,11 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
     const inputValue = $input.value;
 
     if (inputValue === '' || inputValue.length === 0) {
-      alert('No has ingresado participante');
+      $input.style = 'border: 2px solid red'
+      setTimeout(() => {
+        $input.style = 'border: 2px solid #05EB87'
+      }, 3000);
+    /*   alert('No has ingresado participante'); */
     } else {
       jugadoresArray.forEach(e => {
         if (inputValue === e) {
@@ -51,18 +55,17 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
       if (!!UserGandor && !!numero) {
         contador.classList.remove('active');
         console.log(numero);
-        num.innerHTML = `0${numero}`;
+        num.innerHTML = `((( 0${numero} )))`;
         numero--;
       } else if (!!UserGandor && numero == 0) {
         contador.classList.add('active');
         clearInterval(timer);
-        getProduct(UserGandor)
-
+        addProduct(UserGandor)
       }
     }, 1000);
 
     //
-    const getProduct = async (Gandor) => {
+    const addProduct = async (Gandor) => {
       const response = await fetch("/api/winner");
       const data = await response.json();
       const dato = data.data;
@@ -76,18 +79,20 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
       function modalFunction() {
 
         if (Gandor) {
-          if (result && dato.includes(result)) {
-            alert('Ya existe el usuario')
-            console.log(result._id)
-
-            let amountDb = result.amount;
-            console.log(amountDb);
+          if (Gandor && dato.includes(result)) {
+            /*  alert('Ya existe el usuario') */
+            winner.innerHTML = `El ganador fue: ${jugadorGanador} `
+            modal.classList.remove('active');
             let idDb = result._id
+            /* console.log(idDb) */
+            let amountDb = result.amount;
+            /* console.log(amountDb); */
+
             let amountSum = amountDb + 1;
             updateData(idDb, Gandor, amountSum);
 
           } else if (!result) {
-            let amount = 0;
+            let amount = 1;
             winner.innerHTML = `El ganador fue: ${jugadorGanador} `
             modal.classList.remove('active');
             postData(Gandor, amount);
@@ -103,8 +108,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 
       modalFunction()
 
-    };//----------
-    /*   getProduct(UserGandor);// */
+    };
 
     setTimeout(() => {
       $jugadores.innerHTML = "";
@@ -127,7 +131,11 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
   // boton mostrar ganador
   $ganador.addEventListener('click', () => {
     if (jugadoresArray.length === 0) {
-      alert('No has ingresado participantes');
+      $input.style = 'border: 2px solid red'
+      setTimeout(() => {
+        $input.style = 'border: 2px solid #05EB87'
+      }, 3000);
+     /*  alert('No has ingresado participantes'); */
     } else {
       ganadorSorteo();
     }
