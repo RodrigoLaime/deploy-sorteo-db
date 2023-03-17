@@ -17,6 +17,13 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
     if (inputValue === '' || inputValue.length === 0) {
       alert('No has ingresado participante');
     } else {
+      jugadoresArray.forEach(e => {
+        if (inputValue === e) {
+          alert('no')
+          inputValue = '';
+        }
+      })
+
       jugadoresArray.push(inputValue);
       $jugadores.insertAdjacentHTML("beforeend", ` <li>${inputValue}</li> `);
       $input.value = '';
@@ -31,6 +38,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
     const random = Math.floor(Math.random() * jugadoresArray.length)
     const jugadorGanador = jugadoresArray[random];
     jugadoresArray = [];
+
     const UserGandor = jugadorGanador;
 
     // $$$$$$$$$$$$$$$$$$$$$$$$$
@@ -86,6 +94,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
             setTimeout(() => {
               modal.classList.add('active');
             }, 4000);
+            console.log(jugadoresArray);
           }
         } else {
           console.log('No hay ganador')
@@ -126,8 +135,8 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 };
 
 /* ########################################## */
-const apiPatch = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/update/'
-/* const apiPatch = 'http://localhost:3000/api/update/' */
+/* const apiPatch = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/update/' */
+const apiPatch = 'http://localhost:3000/api/update/'
 async function updateData(id, nombre, amount) {
   const response = await fetch(apiPatch + id, {
     method: 'PATCH',
@@ -147,8 +156,8 @@ async function updateData(id, nombre, amount) {
 /* ########################################## */
 
 //funcion para agregar a la base de datos
-/* const api = 'http://localhost:3000/api/sorteo' */
-const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo'
+const api = 'http://localhost:3000/api/sorteo'
+/* const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo' */
 async function postData(name, repeat) {
   const response = await fetch(api, {
     method: 'POST',
