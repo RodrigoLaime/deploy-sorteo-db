@@ -107,12 +107,15 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
             winner.innerHTML = `El ganador fue: ${jugadorGanador} `
             modal.classList.remove('active');
             let idDb = result._id
-            /* console.log(idDb) */
+            //console.log(idDb)
             let amountDb = result.amount;
-            /* console.log(amountDb); */
-
+            //console.log(amountDb);
+            
             let amountSum = amountDb + 1;
             updateData(idDb, Gandor, amountSum);
+            setTimeout(() => {
+              modal.classList.add('active');
+            }, 4000);
 
           } else if (!result) {
             let amount = 1;
@@ -122,7 +125,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
             setTimeout(() => {
               modal.classList.add('active');
             }, 4000);
-            console.log(jugadoresArray);
+            /* console.log(jugadoresArray); */
           }
         } else {
           console.log('No hay ganador')
@@ -131,11 +134,11 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 
       modalFunction()
 
+      setTimeout(() => {
+        $jugadores.innerHTML = "";
+      }, 4000);
     };
 
-    setTimeout(() => {
-      $jugadores.innerHTML = "";
-    }, 4000);
 
   };
 

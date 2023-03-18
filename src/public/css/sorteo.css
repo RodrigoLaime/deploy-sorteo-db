@@ -258,6 +258,10 @@ main {
 }
 
 .sorteo-dos-container .sorteo-input-container .nombres .ganador-btn-dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   background-color: #03AB62;
   border: 2px solid #03ab6200;
   padding: 0 8px;
@@ -265,7 +269,7 @@ main {
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 0px 15px;
   transition: .3s ease;
 }
 
