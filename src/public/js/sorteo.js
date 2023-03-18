@@ -4,6 +4,7 @@ d.addEventListener("DOMContentLoaded", () => {
 });
 
 function sorteoDos(input, agregar, ganador, jugadores) { //agregamos 
+  const ingresarText = d.getElementById('ingresarText');
   let $input = document.getElementById(input), //$ indica que estas trabajando en una etiqueta HTML
     $agregar = d.getElementById(agregar),
     $ganador = d.getElementById(ganador),
@@ -14,16 +15,34 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
   const agregarJugadores = () => {
     let inputValue = $input.value;
 
+    jugadoresArray.forEach(e => {
+      if (!!inputValue && inputValue === e) {
+        inputValue = '';
+        $input.value = '';
+      }
+    })
+    
     if (inputValue === '' || inputValue.length === 0) {
+      $input.style = 'border: 2px solid red'
+      ingresarText.style = 'color: red'
+      setTimeout(() => {
+        $input.style = 'border: 2px solid #05EB87'
+        ingresarText.style = 'color: #03AB62'
+      }, 2500);
+    } else if (inputValue || inputValue.length > 0) {
+      jugadoresArray.push(inputValue);
+      $jugadores.insertAdjacentHTML("beforeend", ` <li>${inputValue}</li> `);
+      $input.value = '';
+    }
+
+    /* if (inputValue === '' || inputValue.length === 0) {
       $input.style = 'border: 2px solid red'
       setTimeout(() => {
         $input.style = 'border: 2px solid #05EB87'
       }, 3000);
-      /*   alert('No has ingresado participante'); */
     } else {
       jugadoresArray.forEach(e => {
         if (inputValue === e) {
-          alert('no')
           inputValue = '';
         }
       })
@@ -35,7 +54,7 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
         $input.value = '';
       }
 
-    }
+    } */
 
   };
 
@@ -134,11 +153,13 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 
   // boton mostrar ganador
   $ganador.addEventListener('click', () => {
-    if (jugadoresArray.length === 0) {
+    if (jugadoresArray.length <= 1) {
       $input.style = 'border: 2px solid red'
+      ingresarText.style = 'color: red'
       setTimeout(() => {
         $input.style = 'border: 2px solid #05EB87'
-      }, 3000);
+        ingresarText.style = 'color: #03AB62'
+      }, 2500);
       /*  alert('No has ingresado participantes'); */
     } else {
       ganadorSorteo();
