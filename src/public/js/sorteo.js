@@ -189,8 +189,8 @@ async function updateData(id, nombre, amount) {
 /* ########################################## */
 
 //funcion para agregar a la base de datos
-/* const api = 'http://localhost:3000/api/sorteo' */
 const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo'
+/* const api = 'http://localhost:3000/api/sorteo' */
 async function postData(name, repeat) {
   const response = await fetch(api, {
     method: 'POST',
