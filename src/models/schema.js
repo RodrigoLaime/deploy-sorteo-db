@@ -1,9 +1,8 @@
-'use strict'
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema; //
+const Schema = mongoose.Schema; 
 
-const mongoSchema = new Schema({ //
+const mongoSchema = new Schema({ 
   name: { type: String, require: true, unique: true },
   amount: { type: Number }
 });

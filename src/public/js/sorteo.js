@@ -4,7 +4,7 @@ d.addEventListener("DOMContentLoaded", () => {
 });
 
 function sorteoDos(input, agregar, ganador, jugadores) { //agregamos 
-  const ingresarText = d.getElementById('ingresarText');
+  let ingresarText = d.getElementById('ingresarText');
   let $input = document.getElementById(input), //$ indica que estas trabajando en una etiqueta HTML
     $agregar = d.getElementById(agregar),
     $ganador = d.getElementById(ganador),
@@ -77,9 +77,9 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
     const timer = setInterval(() => {
       if (!!UserGandor && !!numero) {
         contador.classList.remove('active');
-        console.log(numero);
-        num.innerHTML = `((( 0${numero} )))`;
+        /* console.log(numero); */
         numero--;
+        num.innerHTML = `((( 0${numero} )))`;
       } else if (!!UserGandor && numero == 0) {
         contador.classList.add('active');
         clearInterval(timer);
