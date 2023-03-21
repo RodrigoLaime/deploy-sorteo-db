@@ -16,17 +16,18 @@ app.use(express.static(path.join(__dirname, './public')));
 
 const url = `mongodb+srv://${name}:${api}@cluster0.kpp1aja.mongodb.net/sorteo`;
 
-// configuracion para evitar fallo de coneccion
+// configuracion para evitar fallo de conexion
 mongoose.Promise = global.Promise;
 
-var router = require('./routes/rutaSorteo');
+const router = require('./routes/rutaSorteo');
 
 //cargar body parser
 app.use(bodyParser.urlencoded({ extended: false }));
+
 //cualquier tipo de peticion la convertimos en json
 app.use(bodyParser.json());
 
-//midleware activar el cors para permitir peticion ajax y http desde el front 
+//midleware activq el cors para permitir peticion ajax y http desde el front 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Header', 'Authorization, X-API-KEY, Origin, X-Requested-With, Access-Control-Allow-Request-Method');

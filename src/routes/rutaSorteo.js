@@ -1,9 +1,9 @@
-var express = require('express');
+const express = require('express');
 
-var sorteoController = require('../controller/sorteoController');
+const sorteoController = require('../controller/sorteoController');
 
 // llamamos al objeto router express
-var router = express.Router();
+const router = express.Router();
 
 router.post('/sorteo', sorteoController.save);
 router.get('/winner', sorteoController.getSorteo);

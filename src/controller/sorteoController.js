@@ -1,15 +1,16 @@
 const Schema = require('../models/schema');
 
 //creamos un objeto controller para disponer de todos los métodos de ruta:
-const sorteoController = { //
+const sorteoController = {
 
   //Método para guardar un artículo:
   save: (req, res) => {
 
-    var params = req.body;
+    const params = req.body;
     console.log(params);
+
     //Objeto a guardar
-    var schema = new Schema();
+    const schema = new Schema();
 
     // Asignar valores
     schema.name = params.name;
@@ -17,17 +18,16 @@ const sorteoController = { //
 
     // Guardamos el articulo
     schema.save((err, userWinner) => {
-
       if (err || !userWinner) {
         return res.status(404).send({
           status: 'error',
-          message: 'La nota no se ha guardado !!!'
+          message: 'El jugador no se ha guardado !!!'
         });
       }
 
       // Devolver una respuesta 
       return res.status(200).send({
-        status: 'success',
+        status: 'El jugador se guardo en la base de datos con exito !!',
         userWinner
       });
 
@@ -37,15 +37,18 @@ const sorteoController = { //
 
   //metodo para obtener winner
   getSorteo: (req, res) => {
+    //encuentra el objeto
     let query = Schema.find({});
-    //devuelve todo en la consulta
+
+    //devuelve todo en la consulta de forma desendente
     query.sort('-date').exec((err, data) => {
       if (err) {
         return res.status(500).send({
           status: 'Error',
-          message: 'Error al extraer los datos'
+          message: 'Error al traer juagodores'
         });
       }
+
       //si no existen datos
       if (!data) {
         return res.status(404).send({
@@ -62,16 +65,16 @@ const sorteoController = { //
   },
 
   update: (req, res) => {
-    var noteId = req.params.id;
+    const noteId = req.params.id;
 
     //Recogemos los datos del body
-    var params = req.body;
+    const params = req.body;
 
     // Asignar valores
-
     const name = params.name;
     const amount = params.amount;
 
+    //actualiza un unico documento
     Schema.findOneAndUpdate({ _id: noteId }, { name: name, amount: amount }, { new: true }, (err, userUpdated) => {
 
       if (err) {
@@ -84,7 +87,7 @@ const sorteoController = { //
       if (!userUpdated) {
         return res.status(404).send({
           status: "error",
-          message: "Error, no existe la nota!!"
+          message: "Error, no existe el jugador!!"
         });
       }
 
@@ -97,5 +100,6 @@ const sorteoController = { //
     });
   }
 }
+
 
 module.exports = sorteoController
