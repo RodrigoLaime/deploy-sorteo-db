@@ -2,8 +2,8 @@
 //funcion para actualizar la base de datos
 
 export async function updateData(id, nombre, amount) {
-  /* const apiPatch = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/update/' */
-  const apiPatch = 'http://localhost:3000/api/update/'
+  const apiPatch = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/update/'
+  /*   const apiPatch = 'http://localhost:3000/api/update/' */
   const response = await fetch(apiPatch + id, {
     method: 'PATCH',
     headers: {
@@ -23,8 +23,8 @@ export async function updateData(id, nombre, amount) {
 
 //funcion para agregar a la base de datos
 export async function postData(name, repeat) {
-  /*   const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo' */
-  const api = 'http://localhost:3000/api/sorteo'
+  const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo'
+  /*   const api = 'http://localhost:3000/api/sorteo' */
   const response = await fetch(api, {
     method: 'POST',
     headers: {
